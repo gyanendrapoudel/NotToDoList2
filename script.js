@@ -99,6 +99,8 @@ const displayBadList = () => {
   })
 
   badElm.innerHTML = str
+  // displaying saved hour 
+  document.getElementById('savedHour').textContent = badList.reduce((acc,item)=>acc+item.hr,0);
 }
 
 // total hour calculation function 
