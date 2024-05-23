@@ -14,8 +14,13 @@ const handleSubmit=(e)=>{
   id:randomIdGenerator(),
   type:'entry'
  })
- console.log(taskList)
+ 
+ document.querySelector('#task').value = ''
+ document.querySelector("#hr").value=""
+
  displayEntryList()
+
+
 }
 
 const displayEntryList=()=>{
